@@ -7,7 +7,6 @@ def compute_score(frames_scores):
     for index, frame_score in enumerate(frames_scores):
         if rolls >= 20:
             break
-        frame_score = frames_scores[index]
         if frame_score == '/':
             score += spare_score(frames_scores, index)
         elif frame_score == 'X':
